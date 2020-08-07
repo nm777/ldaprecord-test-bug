@@ -18,14 +18,14 @@ class LdapAuthenticationTest extends TestCase
 
         $ldapUser = User::create([
             'cn' => $this->faker->name,
-            'mail' => $this->faker->email,
+            'samaccountname' => $this->faker->userName,
             'objectguid' => $this->faker->uuid,
         ]);
 
         $fake->actingAs($ldapUser);
 
         $this->post('/login', [
-            'email' => $ldapUser->mail[0],
+            'email' => $ldapUser->samaccountname[0],
             'password' => 'secret',
         ])->assertRedirect('/home');
     }
