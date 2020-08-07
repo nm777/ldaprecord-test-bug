@@ -14,3 +14,4 @@ Subsequent Steps:
 
 1. Setup plain authentication (commit #2): https://ldaprecord.com/docs/laravel/auth/quickstart/#plain
 2. Set phpunit to use SQLite (commit #3)
+3. Create the example test (commit #4): https://ldaprecord.com/docs/laravel/auth/testing/#creating-the-test
