@@ -1,4 +1,5 @@
-Commands to create this project:
+Commands to create this project (commit #1):
+
 ```
 laravel new ldaptest
 cd ldaptest
@@ -8,3 +9,7 @@ composer require directorytree/ldaprecord-laravel
 php artisan vendor:publish ---provider="LdapRecord\Laravel\LdapServiceProvider"
 touch database/database.sqlite
 ```
+
+Subsequent Steps:
+
+1. Setup plain authentication (commit #2): https://ldaprecord.com/docs/laravel/auth/quickstart/#plain
